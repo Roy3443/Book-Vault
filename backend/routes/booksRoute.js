@@ -33,7 +33,7 @@ router.get('/',async(request, response)=> {
         const books = await Book.find({});
         return response.status(200).json({
             count : books.length,
-            data : books
+            data : books,
         });
     }
     catch(error){
@@ -80,10 +80,10 @@ router.put('/:id', async(request, response)=>{
 })
 
 //delete
-router.delete('/:id', (request, response)=>{
+router.delete('/:id', async(request, response)=>{
     try{
         const {id} = request.params;
-        const result = Book.findByIdAndDelete(id);
+        const result = await Book.findByIdAndDelete(id);
         if(!result){
             return response.status(404).send({message:'Book not found'});
         }
