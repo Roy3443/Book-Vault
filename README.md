@@ -1,5 +1,5 @@
 <h1>MERN Book-Store</h1>
-
+<p>Welcome to the Book Store web application! This project showcases a book management system using the MERN (MongoDB, Express, React, Node.js) stack, packaged and deployed with Docker for seamless containerization. The app is designed for CRUD (Create, Read, Update, Delete) operations, providing an intuitive interface for managing book data.</p>
 <h3>Features</h3>
 <ul>
 <li>Book Management: Add, edit, view, and delete books in your collection.</li>
