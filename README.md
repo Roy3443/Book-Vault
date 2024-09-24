@@ -9,12 +9,12 @@
     
 </ul>
 <h3>Tech Stack 🖥️</h3>
-<p>
-    Frontend: React + Tailwind CSS
-    Backend: Node.js + Express.js
-    Database: MongoDB
-    Containerization: Docker + Docker Compose
- </p>
+<ul>
+    <li>Frontend: React + Tailwind CSS</li>
+    <li>Backend: Node.js + Express.js</li>
+    <li>Database: MongoDB</li>
+    <li>Containerization: Docker + Docker Compose</li>
+ </ul>
 
 
 
