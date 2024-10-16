@@ -8,10 +8,11 @@ import CreateBook from './pages/CreateBook';
 import EditBook from './pages/EditBook';
 import ShowBook from './pages/ShowBook';
 import DeleteBook from './pages/DeleteBook';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-gray-100 min-h-screen">
       <Navbar />
       <div className="p-4">
         <Routes>
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/books/delete/:id" element={<DeleteBook />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 };
