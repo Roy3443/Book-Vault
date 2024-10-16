@@ -7,7 +7,8 @@ const Footer = () => {
                 <p>&copy; 2024 My Book App. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-2">
                     <a href="https://github.com/Roy3443" className="hover:text-gray-400">GitHub</a>
-                    <a href="https://linkedin.com/" className="hover:text-gray-400">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/roylasrado/" className="hover:text-gray-400">LinkedIn</a>
+                    <a href="https://www.instagram.com/roy_lasrado/" className="hover:text-gray-400">Instagram</a>
                 </div>
             </div>
         </footer>
