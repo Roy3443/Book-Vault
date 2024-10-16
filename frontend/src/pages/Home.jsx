@@ -24,7 +24,12 @@ const Home = () => {
         })
     }, []);
   return (
-    <div className='p-4'>
+    <div className='p-2'>
+        <div className="hero bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg mb-8 shadow-md">
+            <h2 className="text-4xl font-bold">Welcome to My Book App</h2>
+            <p className="text-lg mt-2">Find your next favorite book and manage your reading list with ease.</p>
+        </div>
+
         <div className='flex justify-between items-center'>
             <h1 className='text-3xl my-8'>Books List</h1>
             <Link to='/books/create'>
