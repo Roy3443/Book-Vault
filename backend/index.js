@@ -37,3 +37,4 @@ mongoose.connect(process.env.mongoDBURL, { useNewUrlParser: true, useUnifiedTopo
     .catch((error) => {
         console.error('Database connection error:', error);
     });
+export default app;
