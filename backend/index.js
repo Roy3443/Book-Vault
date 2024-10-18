@@ -1,8 +1,11 @@
+dotenv.config();
 import express from "express";
-import { PORT , mongoDBURL} from "./config.js";
 import mongoose from "mongoose";
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+
 
 const app  = express();
 
@@ -24,13 +27,13 @@ app.get('/', (request, response)=>{
 
 app.use('/books', booksRoute);
 
-mongoose.connect(mongoDBURL)
-.then(()=> {
-    console.log('App connected to database')
-    app.listen(PORT, () => {
-        console.log(`App is listening to port : ${PORT}`);
+mongoose.connect(process.env.mongoDBURL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log('App connected to the database');
+        app.listen(process.env.PORT, () => {
+            console.log(`App is listening on port: ${process.env.PORT}`);
+        });
+    })
+    .catch((error) => {
+        console.error('Database connection error:', error);
     });
-})
-.catch((error)=> {
-    console.log(error);
-});
