@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(()=>{
         setLoading(true);
         console.log(`https://book-vault-backend.vercel.app/books`);
-        axios.get(`${process.env.REACT_APP_API_URL}/books`)
+        axios.get(`https://book-vault-backend.vercel.app/books`)
         .then((response)=>{
             setBooks(response.data.data);
             setLoading(false);
