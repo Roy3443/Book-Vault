@@ -1,3 +1,5 @@
+dotenv.config();  
+import dotenv from 'dotenv';
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
