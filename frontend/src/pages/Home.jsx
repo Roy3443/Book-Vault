@@ -13,8 +13,8 @@ const Home = () => {
     const [loading, setLoading]  = useState(false);
     useEffect(()=>{
         setLoading(true);
-        console.log(`${import.meta.env.VITE_API_URL}/books`);
-        axios.get(`${import.meta.env.VITE_API_URL}/books`)
+        console.log(`https://book-vault-backend.vercel.app/books`);
+        axios.get(`https://book-vault-backend.vercel.app/books`)
         .then((response)=>{
             setBooks(response.data.data);
             setLoading(false);
