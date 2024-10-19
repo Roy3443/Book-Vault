@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(cors({
-    origin: 'https://book-vault-frontend.vercel.app/'
+    origin: 'https://book-vault-frontend.vercel.app'
   }));
 
 
