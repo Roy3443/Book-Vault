@@ -34,7 +34,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(`https://book-vault-backend.vercel.app/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate('/');
