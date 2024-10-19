@@ -13,7 +13,7 @@ const Home = () => {
     const [loading, setLoading]  = useState(false);
     useEffect(()=>{
         setLoading(true);
-        axios.get('http://localhost:5555/books')
+        axios.get(`${process.env.REACT_APP_API_URL}/books`)
         .then((response)=>{
             setBooks(response.data.data);
             setLoading(false);
@@ -25,8 +25,8 @@ const Home = () => {
     }, []);
   return (
     <div className='p-2'>
-        <div className="hero bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg mb-8 shadow-md">
-            <h2 className="text-4xl font-bold">Welcome to My Book App</h2>
+        <div className="text-center hero bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg mb-8 shadow-md">
+            <h2 className="text-4xl font-bold">Welcome!</h2>
             <p className="text-lg mt-2">Find your next favorite book and manage your reading list with ease.</p>
         </div>
 
