@@ -11,11 +11,13 @@ const app  = express();
 
 app.use(express.json());
 
+app.use(cors());
+
 app.use(cors({
     origin: 'https://book-vault-frontend.vercel.app/'
   }));
 
-app.use(cors())
+
 app.get('/', (request, response)=>{
     console.log(request)
     response.status(234).send('welcome to book store')
