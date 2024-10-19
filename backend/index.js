@@ -11,13 +11,9 @@ const app  = express();
 
 app.use(express.json());
 
-// app.use(
-//     cors({
-//         origin:'http://localhost:5173',
-//         methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//         allowedHeaders: [],
-//     })
-// );
+app.use(cors({
+    origin: 'https://book-vault-frontend.vercel.app/'
+  }));
 
 app.use(cors())
 app.get('/', (request, response)=>{
